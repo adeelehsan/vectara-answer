@@ -8,7 +8,6 @@ import {
   VuiTextColor,
   VuiButtonTertiary,
   VuiText,
-  VuiButtonPrimary,
 } from "../../../ui";
 import "./appHeader.scss";
 
@@ -87,24 +86,6 @@ export const AppHeader = () => {
                 </VuiButtonTertiary>
               </VuiFlexItem>
             )}
-
-            <VuiFlexItem>
-              <VuiButtonPrimary
-                color="primary"
-                size="m"
-                href="https://console.vectara.com/"
-                target="_blank"
-                onClick={() => {
-                  ReactGA.event({
-                    category: "Outbound link",
-                    action: "click",
-                    label: "Try Vectara",
-                  });
-                }}
-              >
-                Try Vectara now
-              </VuiButtonPrimary>
-            </VuiFlexItem>
           </VuiFlexContainer>
         </VuiFlexItem>
       </VuiFlexContainer>
